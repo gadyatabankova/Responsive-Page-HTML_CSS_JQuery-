@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Дипломный проект</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#d55bb9">
+	<meta name="msapplication-TileColor" content="#2b5797">
+	<meta name="theme-color" content="#ffffff">
+
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+	<link rel="stylesheet" type="text/css" href="mypage.css">
+	<script src="jquery-3.4.1.min.js"></script>
+	<script src="jquery.maskedinput.min.js"></script>
+	<script src="jquery.scrollTo.min.js"></script>
+	<script src="script.js" defer></script>
+	<script src="script_draw.js"></script>
+</head>
+<body>
+	<div class="popup-container">
+		<ul>
+			<li><a href="#anchor_services" class="burger_anchor_link">Услуги</a></li>
+			<li><a href="#anchor_work-examples" class="burger_anchor_link">Портфолио</a></li>
+			<li><a href="#anchor_price" class="burger_anchor_link">Стоимость</a></li>
+		</ul>
+	</div>
+
+		<div class="popup-container_form" id="form_call">
+			<div class="myform">
+				<button class="close-btn">
+					<span></span>
+				</button>
+				<form action="https://echo.htmlacademy.ru/">
+					<label>Имя:</label>
+					<input type="text" class="myinput" name="name" placeholder="Введите свое имя" required>
+					<label>Телефон:</label>
+					<input type="tel" class="myinput" name="tel" placeholder="Введите свой номер телефоа" required>
+					<button class="red_button">Отправить</button>
+				</form>
+			</div>
+		</div>
+
+		<div class="popup-container_form" id="form_mail">
+			<div class="myform">
+				<button class="close-btn">
+					<span></span>
+				</button>
+				<form action="https://echo.htmlacademy.ru/">
+					<label>Имя:</label>
+					<input type="text" class="myinput" name="name" placeholder="Введите свое имя" required>
+					<label>Телефон:</label>
+					<input type="tel" class="myinput" name="tel" placeholder="Введите свой номер телефоа" required>
+					<label>E-mail:</label>
+					<input type="email" class="myinput" name="email" placeholder="Введите свой e-mail" required>
+					<button class="red_button">Отправить</button>
+				</form>
+			</div>
+		</div>
+
+	<header class="screen-one">
+		<div class="screen-one__background">
+			<canvas id="myCanvas" width='920' height='764'></canvas>
+		</div>
+		<div class="screen-one__element-decor">
+			<div class="screen-one__element-decor__sharp load-page">#</div>
+			<div class="screen-one__element-decor__brace-copy load-page">{ }</div>
+			<div class="screen-one__element-decor__brace load-page">{ }</div>
+			<div class="screen-one__element-decor__div-copy load-page">&lt;div&gt;</div>
+			<div class="screen-one__element-decor__div load-page">&lt;div&gt;</div>
+			<div class="screen-one__element-decor__slash-copy load-page">&lt;/&gt;</div>
+			<div class="screen-one__element-decor__slash load-page">&lt;/&gt;</div>
+		</div>
+		<div class="fix-cont">
+			<div class="nav">
+				<div class="menu_hidden">
+					<button class="menu-btn">
+						<span></span>
+					</button>
+				</div>
+				<div class="menu">
+					<ul class="menu__elements">
+						<li><a href="mypage.html#anchor_services">Услуги</a></li>
+	   				<li><a href="mypage.html#anchor_work-examples">Портфолио</a></li>
+	   				<li><a href="mypage.html#anchor_price">Стоимость</a></li>
+	   			</ul>
+				</div>
+				<div class="feedback">
+					<div class="feedback__phone-number">+7 (499) 995-55-77</div>
+					<button class="feedback__order-call">Заказать звонок</button>
+				</div>
+				<div class="call_hidden">
+					<a href="#" class="call-btn">
+						<i class="far fa-circle"></i>
+						<i class="fas fa-phone fa-rotate-90"></i>
+					</a>
+				</div>
+			</div>
+			<div class="landing">
+				<div class="landing__text">
+					<div class="landing__text-name">Дмитрий Алексеев</div>
+					<div class="landing__text-description">Frontend-разработчик и веб-верстальщик</div>
+					<button class="red_button" id="learn_more">Узнать больше</button>
+				</div>
+				<div class="landing__background">
+					<img src="img/man.png" alt="фото программиста">
+
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="services" id='anchor_services'>
+			<div class="fix-cont">
+				<h1>Что я делаю</h1>
+				<div class="what-I-do">
+					<div class="what-I-do__tools-and-utensils">
+						<img src="img/tools-and-utensils.png" alt="инструменты">
+						<p>Вёрстка лендинг-страниц и сайтов любой сложности</p>
+					</div>
+					<div class="what-I-do__responsive">
+						<img src="img/responsive.png" alt="возможности">
+						<p>Адаптивная вёрстка под все браузеры и устройства</p>
+					</div>
+					<div class="what-I-do__programming">
+						<img src="img/programming.png" alt="какой код пишу">
+						<p>Frontend-разработка и программирование</p>
+					</div>
+					<div class="what-I-do__coding">
+						<img src="img/coding.png" alt="что еще могу">
+						<p>Исправление и доработка существующей вёрстки</p>
+					</div>
+				</div>
+				<button class="red_button" id="learn_price">Узнать стоимость</button>
+			</div>
+		</div>
+		<div class="work-examples" id="anchor_work-examples">
+			<div class="fix-cont">
+				<h1>Примеры моих работ</h1>
+				<div class="slider">
+					<div class="slider__items">
+						<div class="slider__wrapper">
+							<div class="slider__item">
+								<img src="img/site-1.png" alt="сайт психолога">
+								<p>Сайт психолога Веры Антоновой</p>
+							</div>
+							<div class="slider__item">
+								<img src="img/site-2.png" alt="сайт магазина одежды">
+								<p>Сайт магазина детской одежды</p>
+							</div>
+							<div class="slider__item">
+								<img src="img/site-3.png" alt="сайт магазина рыбалки">
+								<p>Сайт магазина рыболов</p>
+							</div>
+							<div class="slider__item">
+								<img src="img/site-1.png" alt="сайт психолога">
+								<p>Сайт психолога Веры Антоновой</p>
+							</div>
+						</div>
+					</div>
+					<a class="slider__control slider__control_left next" href="#" role="button"></a>
+		    		<a class="slider__control slider__control_right next" id="next2" href="#" role="button"></a>
+				</div>
+				<div class="oder-button">
+					<button class="red_button" id="oder_project">Заказать проект</button>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="about" id="anchor_price">
+			<div class="about__element-decor">
+				<div class="about__element-decor__sharp">#</div>
+				<div class="about__element-decor__brace-copy">{ }</div>
+				<div class="about__element-decor__brace">{ }</div>
+				<div class="about__element-decor__div-copy">&lt;div&gt;</div>
+				<div class="about__element-decor__div">&lt;div&gt;</div>
+				<div class="about__element-decor__slash">&lt;/&gt;</div>
+			</div>
+			<div class="fix-cont">
+				<div class="about__discription">
+					Адаптивная верстка под все устройства и браузеры от 1000 рублей всего за 4 часа.*
+				</div>
+				<div class="about__price">
+					* Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально, в зависимости от сложности
+				</div>
+			</div>
+		</div>
+		<div class="white_bar">
+			<div class="fix-cont">
+				<div class="left">
+					<ul>
+						<li><a href="mypage.html#anchor_services">Услуги</a></li>
+	   					<li><a href="mypage.html#anchor_work-examples">Портфолио</a></li>
+	   					<li><a href="mypage.html#anchor_price">Стоимость</a></li>
+					</ul>
+				</div>
+				<div class="center">
+					<span id="phone"><a href="tel:+380985554433">+7 (499) 995-77-55</a></span>
+					<span id="mail"><a href="mailto:dmitry@alekseev.com">dmitry@alekseev.com</a></span>
+				</div>
+				<div class="right">
+					<div>
+						<button class="feedback__order-call">Заказать звонок</button>
+					</div>
+					<div class="social_netwok_link">
+						<a href='https://vk.com/' class="social">
+							<div id="vk"></div>
+						</a>
+						<a href='https://www.facebook.com/'  class="social">
+							<div  id="fb"></div>
+						</a>
+						<a href='https://twitter.com/'  class="social">
+							<div id="tw"></div>
+						</a>
+						<a href='https://www.instagram.com/' class="social">
+							<div  id="in"></div>
+						</a>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+		<div class="blue_bar">
+			<small>&copy; Дмитрий Алексеев, 2016 - 2018</small>
+		</div>
+	</footer>
+
+</body>
+</html>
